@@ -1,5 +1,6 @@
 ﻿l_english:
- #Head of Government
+ ## Head of Government ##
+ #Germany
  GER_hog_adolf_hitler:0 "Adolf Hitler"
  GER_hog_martin_bormann:0 "Martin Bormann"
  GER_hog_hermann_goring:0 "Hermann Göring"
@@ -12,17 +13,31 @@
  GER_hog_albert_speer:0 "Albert Speer"
  GER_hog_ludwig_beck:0 "Ludwig Beck"
  GER_hog_johann_schwerin_von_krosigk:0 "Schwerin von Krosigk"
- #Foreign Minister
+ #UK
+ ENG_hog_winston_churchill:0 "Winston Churchill"
+ ## Foreign Minister ##
+ #Germany
  GER_fm_joachim_von_ribbentrop:0 "Joachim von Ribbentrop"
- #Minister of Security
+ #UK
+ ENG_fm_ernest_bevin:0 "Ernest Bevin"
+ ## Minister of Security ##
+ #Germany
  GER_mos_heinrich_himmler:0 "Heinrich Himmler"
- #Armaments Minister
+ #UK
+ ENG_mos_james_chuter_ede:0 "James Chuter Ede"
+ ## Armaments Minister ##
+ #Germany
  GER_am_albert_speer:0 "Albert Speer"
- #Head of Intelligence
+ #UK
+ ENG_am_stafford_cripps:0 "Stafford Cripps"
+ ## Head of Intelligence ##
+ #Germany
  GER_hoi_reinhard_heydrich:0 "Reinhard Heydrich"
- # Political Demagogue #
+ ## Political Demagogue ##
+ #Germany
  GER_pd_joseph_goebbels:0 "Joseph Goebbels"
- #Chief of Staff
+ ## Chief of Staff ##
+ #Germany
  GER_costaff_alfred_jodl:0 "Alfred Jodl"
  GER_costaff_ludwig_beck:0 "Ludwig Beck"
  GER_costaff_franz_halder:0 "Franz Halder"
@@ -35,9 +50,12 @@
  GER_costaff_adolf_heusinger:0 "Adolf Heusinger"
  GER_costaff_julius_ringel:0 "Julius Ringel"
  GER_costaff_erich_von_manstein:0 "Erich von Manstein"
- #Chief of Army
+ ## Chief of Army ##
+ #Germany
  GER_coarmy_walther_von_brauchitsch:0 "Walther von Brauchitsch"
- #Chief of Navy
+ ## Chief of Navy ##
+ #Germany
  GER_conavy_karl_donitz:0 "Karl Dönitz"
- #Chief of Airforce
+ ## Chief of Airforce ##
+ #Germany
  GER_coair_hermann_goring:0 "Hermann Göring"

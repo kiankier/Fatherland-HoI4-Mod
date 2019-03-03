@@ -1,0 +1,75 @@
+﻿capital = 286
+
+oob = "INC_1948"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gwtank = 1
+	basic_light_tank = 1
+	gw_artillery = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+add_ideas = {
+#laws
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+}
+
+set_autonomy = {
+	target = VIN
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = CAM
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = LAO
+	autonomous_state = autonomy_puppet
+}
+
+set_politics = {
+
+	parties = {
+		national_socialism = {
+			popularity = 0
+		}
+		fascism = {
+			popularity = 0
+		}
+		paternal_autocrat = {
+			popularity = 48
+		}
+		social_conservative = {
+			popularity = 15
+		}
+		market_liberal = {
+			popularity = 0
+		}
+		social_liberal = {
+			popularity = 13
+		}
+		social_democrat = {
+			popularity = 0
+		}
+		left_wing_radical = {
+			popularity = 8
+		}
+		leninism = {
+			popularity = 0
+		}
+		stalinism = {
+			popularity = 16
+		}
+	}
+
+	ruling_party = paternal_autocrat
+	last_election = "1933.10.16"
+	election_frequency = 36
+	elections_allowed = no
+}
+
