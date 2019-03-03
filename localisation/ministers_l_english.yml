@@ -1,0 +1,43 @@
+﻿l_english:
+ #Head of Government
+ GER_hog_adolf_hitler:0 "Adolf Hitler"
+ GER_hog_martin_bormann:0 "Martin Bormann"
+ GER_hog_hermann_goring:0 "Hermann Göring"
+ GER_hog_joseph_goebbels:0 "Joseph Goebbels"
+ GER_hog_rudolf_hess:0 "Rudolf Hess"
+ GER_hog_wilhelm_frick:0 "Wilhelm Frick"
+ GER_hog_karl_donitz:0 "Karl Dönitz"
+ GER_hog_arthur_seyss_inquart:0 "Arthur Seyss-Inquart"
+ GER_hog_josef_burckel:0 "Josef Bürckel"
+ GER_hog_albert_speer:0 "Albert Speer"
+ GER_hog_ludwig_beck:0 "Ludwig Beck"
+ GER_hog_johann_schwerin_von_krosigk:0 "Schwerin von Krosigk"
+ #Foreign Minister
+ GER_fm_joachim_von_ribbentrop:0 "Joachim von Ribbentrop"
+ #Minister of Security
+ GER_mos_heinrich_himmler:0 "Heinrich Himmler"
+ #Armaments Minister
+ GER_am_albert_speer:0 "Albert Speer"
+ #Head of Intelligence
+ GER_hoi_reinhard_heydrich:0 "Reinhard Heydrich"
+ # Political Demagogue #
+ GER_pd_joseph_goebbels:0 "Joseph Goebbels"
+ #Chief of Staff
+ GER_costaff_alfred_jodl:0 "Alfred Jodl"
+ GER_costaff_ludwig_beck:0 "Ludwig Beck"
+ GER_costaff_franz_halder:0 "Franz Halder"
+ GER_costaff_heinz_guderian:0 "Heinz Guderian"
+ GER_costaff_hans_krebs:0 "Hans Krebs"
+ GER_costaff_fritz_bayerlein:0 "Fritz Bayerlein"
+ GER_costaff_erich_hoepner:0 "Erich Hoepner"
+ GER_costaff_kurt_zeitzler:0 "Kurt Zeitzler"
+ GER_costaff_erwin_rommel:0 "Erwin Rommel"
+ GER_costaff_adolf_heusinger:0 "Adolf Heusinger"
+ GER_costaff_julius_ringel:0 "Julius Ringel"
+ GER_costaff_erich_von_manstein:0 "Erich von Manstein"
+ #Chief of Army
+ GER_coarmy_walther_von_brauchitsch:0 "Walther von Brauchitsch"
+ #Chief of Navy
+ GER_conavy_karl_donitz:0 "Karl Dönitz"
+ #Chief of Airforce
+ GER_coair_hermann_goring:0 "Hermann Göring"

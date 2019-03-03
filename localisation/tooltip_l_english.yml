@@ -1,0 +1,7 @@
+﻿l_english:
+ tooltip_is_socialist:0 "Has Left-Wing Government"
+ tooltip_is_democratic:0 "Has Democratic Government"
+ tooltip_is_dictatorship:0 "Has Right-Wing Government"
+ tooltip_has_national_socialist_government:0 "Has National Socialist Government"
+ tooltip_has_fascist_government:0 "Has Fascist Government"
+ tooltip_has_paternal_autocrat_government:0 "Has Paternal Autocrat Government"

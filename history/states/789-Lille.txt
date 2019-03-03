@@ -1,0 +1,23 @@
+
+state={
+	id=789
+	name="STATE_789"
+	manpower = 220873
+	state_category = city
+	history={
+		owner = WAL
+		victory_points = {
+			11483 10
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		add_core_of = WAL
+		add_core_of = FRA
+	}
+
+	provinces={
+		11483 11606 
+	}
+}

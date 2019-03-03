@@ -1,0 +1,468 @@
+﻿###########################
+# Ideology Events
+###########################
+# Made By Mads
+###########################
+
+add_namespace = ideology_event
+
+### Setting up opinion modifiers at gamestart ###
+country_event = {
+	id = ideology_event.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ideology_event.1"}
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_socialist_government = yes
+			}
+			every_country = {
+				limit = {
+					has_socialist_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_democratic_government = yes
+						has_dictatorship_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_democratic_government = yes
+			}
+			every_country = {
+				limit = {
+					has_democratic_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_socialist_government = yes
+						has_dictatorship_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dictatorship_government = yes
+			}
+			every_country = {
+				limit = {
+					has_dictatorship_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_democratic_government = yes
+						has_socialist_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = different_ideology
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				has_same_government_as_ROOT = yes
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = same_ideology
+			}
+		}
+		if = {
+			limit = {
+				has_government = leninism
+			}
+			set_country_flag = opinion_set_leninism
+		}
+		if = {
+			limit = {
+				has_government = stalinism
+			}
+			set_country_flag = opinion_set_stalinism
+		}
+		if = {
+			limit = {
+				has_government = left_wing_radical
+			}
+			set_country_flag = opinion_set_radical_socialist
+		}
+		if = {
+			limit = {
+				has_government = social_democrat
+			}
+			set_country_flag = opinion_set_social_democrat
+		}
+		if = {
+			limit = {
+				has_government = social_liberal
+			}
+			set_country_flag = opinion_set_social_liberal
+		}
+		if = {
+			limit = {
+				has_government = market_liberal
+			}
+			set_country_flag = opinion_set_market_liberal
+		}
+		if = {
+			limit = {
+				has_government = social_conservative
+			}
+			set_country_flag = opinion_set_social_conservative
+		}
+		if = {
+			limit = {
+				has_government = paternal_autocrat
+			}
+			set_country_flag = opinion_set_paternal_autocrat
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			set_country_flag = opinion_set_fascism
+		}
+		if = {
+			limit = {
+				has_government = national_socialism
+			}
+			set_country_flag = opinion_set_national_socialism
+		}
+	}
+
+	option = {
+	}
+}
+
+### Setting up opinion modifiers on government change ###
+country_event = {
+	id = ideology_event.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ideology_event.2"}
+
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_government = leninism }
+				has_country_flag = opinion_set_leninism
+			}
+			AND = {
+				NOT = { has_government = stalinism }
+				has_country_flag = opinion_set_stalinism
+			}
+			AND = {
+				NOT = { has_government = left_wing_radical }
+				has_country_flag = opinion_set_left_wing_radical
+			}
+			AND = {
+				NOT = { has_government = social_democrat }
+				has_country_flag = opinion_set_social_democrat
+			}
+			AND = {
+				NOT = { has_government = social_liberal }
+				has_country_flag = opinion_set_social_liberal
+			}
+			AND = {
+				NOT = { has_government = market_liberal }
+				has_country_flag = opinion_set_market_liberal
+			}
+			AND = {
+				NOT = { has_government = social_conservative }
+				has_country_flag = opinion_set_social_conservative
+			}
+			AND = {
+				NOT = { has_government = paternal_autocrat }
+				has_country_flag = opinion_set_paternal_autocrat
+			}
+			AND = {
+				NOT = { has_government = fascism }
+				has_country_flag = opinion_set_fascism
+			}
+			AND = {
+				NOT = { has_government = national_socialism }
+				has_country_flag = opinion_set_national_socialism
+			}
+			AND = {
+				NOT = { has_country_flag = opinion_set_leninism }
+				NOT = { has_country_flag = opinion_set_stalinism }
+				NOT = { has_country_flag = opinion_set_left_wing_radical }
+				NOT = { has_country_flag = opinion_set_social_democrat }
+				NOT = { has_country_flag = opinion_set_social_liberal }
+				NOT = { has_country_flag = opinion_set_market_liberal }
+				NOT = { has_country_flag = opinion_set_social_conservative }
+				NOT = { has_country_flag = opinion_set_paternal_autocrat }
+				NOT = { has_country_flag = opinion_set_fascism }
+				NOT = { has_country_flag = opinion_set_national_socialism }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		clr_country_flag = opinion_set_leninism
+		clr_country_flag = opinion_set_stalinism
+		clr_country_flag = opinion_set_left_wing_radical
+		clr_country_flag = opinion_set_social_democrat
+		clr_country_flag = opinion_set_social_liberal
+		clr_country_flag = opinion_set_market_liberal
+		clr_country_flag = opinion_set_social_conservative
+		clr_country_flag = opinion_set_paternal_autocrat
+		clr_country_flag = opinion_set_fascism
+		clr_country_flag = opinion_set_national_socialism
+		every_country = {
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = similar_ideology
+			}
+			ROOT = {
+				remove_opinion_modifier = {
+					target = PREV
+					modifier = similar_ideology
+				}
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = different_ideology
+			}
+			ROOT = {
+				remove_opinion_modifier = {
+					target = PREV
+					modifier = different_ideology
+				}
+			}
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = same_ideology
+			}
+			ROOT = {
+				remove_opinion_modifier = {
+					target = PREV
+					modifier = same_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_socialist_government = yes
+			}
+			every_country = {
+				limit = {
+					has_socialist_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_democratic_government = yes
+						has_dictatorship_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_democratic_government = yes
+			}
+			every_country = {
+				limit = {
+					has_democratic_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_socialist_government = yes
+						has_dictatorship_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = different_ideology
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dictatorship_government = yes
+			}
+			every_country = {
+				limit = {
+					has_dictatorship_government = yes
+					NOT = { has_same_government_as_ROOT = yes }
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = similar_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = similar_ideology
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_democratic_government = yes
+						has_socialist_government = yes
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = different_ideology
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = different_ideology
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				has_same_government_as_ROOT = yes
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = same_ideology
+			}
+			reverse_add_opinion_modifier = {
+				target = ROOT
+				modifier = same_ideology
+			}
+		}
+		if = {
+			limit = {
+				has_government = leninism
+			}
+			set_country_flag = opinion_set_leninism
+		}
+		if = {
+			limit = {
+				has_government = stalinism
+			}
+			set_country_flag = opinion_set_stalinism
+		}
+		if = {
+			limit = {
+				has_government = left_wing_radical
+			}
+			set_country_flag = opinion_set_left_wing_radical
+		}
+		if = {
+			limit = {
+				has_government = social_democrat
+			}
+			set_country_flag = opinion_set_social_democrat
+		}
+		if = {
+			limit = {
+				has_government = social_liberal
+			}
+			set_country_flag = opinion_set_social_liberal
+		}
+		if = {
+			limit = {
+				has_government = market_liberal
+			}
+			set_country_flag = opinion_set_market_liberal
+		}
+		if = {
+			limit = {
+				has_government = social_conservative
+			}
+			set_country_flag = opinion_set_social_conservative
+		}
+		if = {
+			limit = {
+				has_government = paternal_autocrat
+			}
+			set_country_flag = opinion_set_paternal_autocrat
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			set_country_flag = opinion_set_fascism
+		}
+		if = {
+			limit = {
+				has_government = national_socialism
+			}
+			set_country_flag = opinion_set_national_socialism
+		}
+
+	}
+
+	option = {}
+}

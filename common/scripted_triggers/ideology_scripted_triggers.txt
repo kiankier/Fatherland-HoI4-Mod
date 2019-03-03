@@ -1,0 +1,111 @@
+### Ideology Scripted Triggers ###
+
+### Made By Mads ###
+
+### checks for goverment type ###
+
+# checks if you have a socialist/communist government
+has_socialist_government = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_is_socialist
+		OR = {
+			has_government = leninism
+			has_government = stalinism
+			has_government = left_wing_radical
+		}
+	}
+}
+
+# checks if you have a democratic government
+has_democratic_government = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_is_democratic
+		OR = {
+			has_government = social_democrat
+			has_government = social_liberal
+			has_government = market_liberal
+			has_government = social_conservative
+		}
+	}
+}
+
+# checks if you have a dictatorship
+has_dictatorship_government = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_is_dictatorship
+		OR = {
+			has_government = paternal_autocrat
+			has_government = national_socialism
+			has_government = fascism
+		}
+	}
+}
+
+# checks whether the country in scope has the same government as ROOT (the country running the event/focus)
+has_same_government_as_ROOT = {
+	OR = {
+		AND = {
+			has_government = leninism
+			ROOT = { has_government = leninism }
+		}
+		AND = {
+			has_government = stalinism
+			ROOT = { has_government = stalinism }
+		}
+		AND = {
+			has_government = left_wing_radical
+			ROOT = { has_government = left_wing_radical }
+		}
+		AND = {
+			has_government = social_democrat
+			ROOT = { has_government = social_democrat }
+		}
+		AND = {
+			has_government = social_liberal
+			ROOT = { has_government = social_liberal }
+		}
+		AND = {
+			has_government = market_liberal
+			ROOT = { has_government = market_liberal }
+		}
+		AND = {
+			has_government = social_conservative
+			ROOT = { has_government = social_conservative }
+		}
+		AND = {
+			has_government = paternal_autocrat
+			ROOT = { has_government = paternal_autocrat }
+		}
+		AND = {
+			has_government = fascism
+			ROOT = { has_government = fascism }
+		}
+		AND = {
+			has_government = national_socialism
+			ROOT = { has_government = national_socialism }
+		}
+	}
+}
+
+### checks for specific ideology ### #needs to add more types
+
+has_national_socialist_government = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_has_national_socialist_government
+		has_government = national_socialism
+	}
+}
+
+has_fascist_government = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_has_fascist_government
+		has_government = fascism
+	}
+}
+
+has_paternal_autocrat_government = {
+	custom_trigger_tooltip = {
+		tooltip = tooltip_has_paternal_autocrat_government
+		has_government = paternal_autocrat
+	}
+}

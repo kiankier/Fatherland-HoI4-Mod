@@ -1,0 +1,20 @@
+
+state={
+	id=797
+	name="STATE_797"
+	manpower = 318983
+	
+	state_category = town
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		521 3560 5291 11516 11642 
+	}
+}

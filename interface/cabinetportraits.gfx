@@ -1,0 +1,22 @@
+spriteTypes = {	
+####################
+# Generic Portrait #
+####################
+	spriteType = {
+		name = "GFX_idea_generic_minister"
+		textureFile = "gfx/interface/cabinet/generic_minister.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_empty_minister"
+		textureFile = "gfx/interface/cabinet/empty_minister.tga"
+	}
+###########
+# Germany #
+###########
+# Adolf Hitler
+	spriteType = {
+		name = "GFX_idea_adolf_hitler"
+		textureFile = "gfx/interface/cabinet/GER/idea_adolf_hitler.tga"
+	}
+}

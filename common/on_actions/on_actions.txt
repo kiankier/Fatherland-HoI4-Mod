@@ -1,0 +1,8 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#Opinion Modifiers Setup at Game Start
+			every_country = { country_event = ideology_event.1 }
+		}
+	}
+}

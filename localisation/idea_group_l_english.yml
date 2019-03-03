@@ -1,0 +1,56 @@
+﻿l_english:
+ government:1 "Laws" #& Government
+ research_production:0 "Research & Production"
+ cabinet:0 "Cabinet"
+ head_of_government:0 "Head of Government"
+ foreign_minister:0 "Foreign Minister"
+ minister_of_security:0 "Minister of Security"
+ armaments_minister:0 "Armaments Minister"
+ head_of_intelligence:0 "Head of Intelligence"
+ political_demagogue:0 "Political Demagogue"
+ military_staff:0 "Military Staff"
+ chief_of_staff:0 "Chief of Staff"
+ chief_of_army:0 "Chief of Army"
+ chief_of_navy:0 "Chief of Navy"
+ chief_of_airforce:0 "Chief of Airforce"
+ high_command:0 "Military High Command"
+ #theorist:0 "Theorist"
+
+ ### Cabinet Traits ###
+ # Ideology Traits #
+ ideology_ns:0 "National Socialist"
+ ideology_fa:0 "Fascist"
+ ideology_pa:0 "Paternal Autocrat"
+ ideology_cl:0 "Social Conservative"
+ ideology_ml:0 "Market Liberal"
+ ideology_sl:0 "Social Liberal"
+ ideology_sd:0 "Social Democrat"
+ ideology_lw:0 "Left Wing Radical"
+ ideology_le:0 "Leninist"
+ ideology_st:0 "Stalinist"
+ # Head of Government Traits #
+ hog_flamboyant_tough_guy:0 "Flamboyant Tough Guy"
+ hog_the_brown_eminence:0 "The Brown Eminence"
+ hog_old_air_marshal:0 "Old Air Marshal"
+ hog_silent_workhorse:0 "Silent Workhorse"
+ hog_backroom_backstabber:0 "Backroom Backstabber"
+ # Foreign Minister Traits #
+ fm_salesman_of_deception:0 "The Salesman of Deception"
+ # Minister of Security Traits #
+ mos_ss_reichsfuhrer:0 "SS Reichsführer"
+ # Armaments Minister Traits #
+ am_genius_organizer:0 "Genius Organizer"
+ # Head of Intelligence #
+ hoi_the_hangman:0 "The Hangman"
+ # Chief of Staff #
+ costaff_school_of_psychology:0 "School of Psychology"
+ costaff_school_of_maneuver:0 "School of Maneuver"
+ costaff_school_of_fire_support:0 "School of Fire Support"
+ costaff_school_of_defence:0 "School of Defense"
+ costaff_school_of_mass_combat:0 "School of Mass Combat"
+ # Chief of Army #
+ coarmy_armoured_spearhead_doctrine:0 "Armoured Spearhead Doctrine"
+ # Chief of Navy Traits  #
+ conavy_indirect_approach_doctrine:0 "Indirect Approach Doctrine"
+ # Chief of Airforce Traits #
+ coair_the_iron_knight:0 "The Iron Knight"
