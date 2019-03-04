@@ -1,6 +1,6 @@
 ﻿capital = 64
 
-oob = "GER_1936"
+oob = "GER_1948"
 
 set_fuel_ratio = 0.8
 
@@ -104,7 +104,14 @@ set_autonomy = {
 	target = BOH
 	autonomous_state = autonomy_reichsprotectorate
 }
-
+set_autonomy = {
+	target = NOR
+	autonomous_state = autonomy_reichskommissariat
+}
+set_autonomy = {
+	target = DEN
+	autonomous_state = autonomy_puppet
+}
 
 set_variable = { var = ger_gateway_to_europe_influence value = 0 }
 
@@ -141,11 +148,10 @@ set_politics = {
 		}
 		fascism = {
 			popularity = 5
-			banned = yes #all political parties are banned with the acception of the NSDAP
 		}
 		paternal_autocrat = {
 			popularity = 5
-			banned = yes
+			banned = yes #all political parties are banned with the acception of the NSDAP
 		}
 		social_conservative = {
 			popularity = 5

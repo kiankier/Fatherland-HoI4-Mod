@@ -25,6 +25,60 @@ set_autonomy = {
 	autonomous_state = autonomy_puppet
 }
 
+set_politics = {
+
+	parties = {
+		national_socialism = {
+			popularity = 48
+		}
+		fascism = {
+			popularity = 14
+		}
+		paternal_autocrat = {
+			popularity = 7
+		}
+		social_conservative = {
+			popularity = 12
+		}
+		market_liberal = {
+			popularity = 4
+		}
+		social_liberal = {
+			popularity = 3
+		}
+		social_democrat = {
+			popularity = 4
+		}
+		left_wing_radical = {
+			popularity = 8
+		}
+		leninism = {
+			popularity = 0
+		}
+		stalinism = {
+			popularity = 0
+		}
+	}
+
+	ruling_party = national_socialism
+	last_election = "1933.10.16"
+	election_frequency = 36
+	elections_allowed = no
+
+}
+
+create_country_leader = {
+	name = "Josef Grohé"
+	desc = "_DESC"
+	picture = ".dds"
+	expire = "1965.1.1"
+	ideology = national_socialism_subtype
+	traits = {
+		#
+	}
+}
+
+
 # Due to the way hoi loads files this has to be here
 FLA = {
 	set_politics = {
@@ -105,58 +159,5 @@ WAL = {
 		last_election = "1888.15.6"
 		election_frequency = 48
 		elections_allowed = no
-	}
-}
-
-set_politics = {
-
-	parties = {
-		national_socialism = {
-			popularity = 48
-		}
-		fascism = {
-			popularity = 14
-		}
-		paternal_autocrat = {
-			popularity = 7
-		}
-		social_conservative = {
-			popularity = 12
-		}
-		market_liberal = {
-			popularity = 4
-		}
-		social_liberal = {
-			popularity = 3
-		}
-		social_democrat = {
-			popularity = 4
-		}
-		left_wing_radical = {
-			popularity = 8
-		}
-		leninism = {
-			popularity = 0
-		}
-		stalinism = {
-			popularity = 0
-		}
-	}
-
-	ruling_party = national_socialism
-	last_election = "1933.10.16"
-	election_frequency = 36
-	elections_allowed = no
-
-}
-
-create_country_leader = {
-	name = "Josef Grohé"
-	desc = "_DESC"
-	picture = ".dds"
-	expire = "1965.1.1"
-	ideology = national_socialism_subtype
-	traits = {
-		#
 	}
 }
