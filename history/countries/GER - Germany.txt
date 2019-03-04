@@ -44,6 +44,7 @@ give_guarantee = HUN
 give_guarantee = ROM
 give_guarantee = BUL
 give_guarantee = FIN
+give_guarantee = COK
 
 create_faction = Axis
 add_to_faction = GER
@@ -64,6 +65,8 @@ add_to_faction = ROM
 add_to_faction = DEN
 add_to_faction = NOR
 add_to_faction = GRE
+add_to_faction = LOK
+add_to_faction = SSS
 
 set_autonomy = {
 	target = HOL
@@ -90,6 +93,10 @@ set_autonomy = {
 	autonomous_state = autonomy_puppet
 }
 set_autonomy = {
+	target = LOK
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
 	target = GGP
 	autonomous_state = autonomy_generalgouvernement
 }
@@ -97,6 +104,7 @@ set_autonomy = {
 	target = BOH
 	autonomous_state = autonomy_reichsprotectorate
 }
+
 
 set_variable = { var = ger_gateway_to_europe_influence value = 0 }
 

@@ -1,0 +1,22 @@
+
+state={
+	id=804
+	name="STATE_804"
+
+	history={
+		owner = LOK
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = LOK
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		212 261 3199 3250 3292 3376 9366 11242 
+	}
+	manpower=90567
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

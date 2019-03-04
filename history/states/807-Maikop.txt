@@ -1,0 +1,20 @@
+
+state={
+	id=807
+	name="STATE_807"
+	manpower = 603100
+	
+	state_category = city
+
+	history={
+		owner = COK
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = SOV
+	}
+
+	provinces={
+		717 719 735 3717 3720 3760 6736 6738 6741 9691 9694 9696 11668 11681 
+	}
+}
