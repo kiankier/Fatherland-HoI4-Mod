@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+
+		HOL_the_colonial_army = {
+
+			picture = hol_expand_the_colonial_army
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				training_time_factor = -0.10
+				non_core_manpower = 0.20
+			}
+		}
+	}
+}

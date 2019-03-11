@@ -1,0 +1,83 @@
+﻿capital = 335 #Jakarta
+
+oob = "INS_1948"
+
+set_research_slots = 2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_submarine = 1
+	basic_destroyer = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	transport = 1
+	fuel_silos = 1
+}
+
+declare_war_on = {
+    type = take_state_focus
+    target = HOL
+    generator = { 667 334 673 738 668 669 }
+}
+
+set_convoys = 25
+
+set_politics = {
+
+	parties = {
+		national_socialism = {
+			popularity = 0
+		}
+		fascism = {
+			popularity = 0
+		}
+		paternal_autocrat = {
+			popularity = 100
+		}
+		social_conservative = {
+			popularity = 0
+		}
+		market_liberal = {
+			popularity = 0
+		}
+		social_liberal = {
+			popularity = 0
+		}
+		social_democrat = {
+			popularity = 0
+		}
+		left_wing_radical = {
+			popularity = 0
+		}
+		leninism = {
+			popularity = 0
+		}
+		stalinism = {
+			popularity = 0
+		}
+	}
+
+	ruling_party = paternal_autocrat
+	last_election = "1936.1.1"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Achmed Sukarno"
+	desc = ""
+	picture = ".tga"
+	expire = "1953.3.1"
+	ideology = paternal_autocrat_subtype #Marhaenism his own unique mix of stuff
+	traits = {
+		
+	}
+}
+

@@ -70,18 +70,18 @@ ideas = {
 ########################
 # Head of Intelligence #
 ########################
-#	head_of_intelligence = {
-#	# Reinhard Heydrich
-#		GER_hoi_reinhard_heydrich = {
-#			picture = generic_minister
-#			allowed = { tag = ENG }
-#			visible = {
-#				has_democratic_government = yes
-#				NOT = { has_country_flag = reinhard_heydrich_unavailable }
-#			}
-#			cost = 150
-#			#removal_cost = 10
-#			traits = { ideology_ns hoi_the_hangman }
-#		}
-#	}
+	head_of_intelligence = {
+	# Brendan Bracken
+		ENG_hoi_brendan_bracken = {
+			picture = generic_minister
+			allowed = { tag = ENG }
+			visible = {
+				has_democratic_government = yes
+				NOT = { has_country_flag = brendan_bracken_unavailable }
+			}
+			cost = 150
+			#removal_cost = 10
+			traits = { ideology_sd hoi_political_specialist }
+		}
+	}
 }

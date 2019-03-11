@@ -4,5 +4,9 @@ on_actions = {
 			#Opinion Modifiers Setup at Game Start
 			every_country = { country_event = ideology_event.1 }
 		}
+		effect = {
+			#Starting Events
+			every_country = { country_event = start_event.1 }
+		}
 	}
 }

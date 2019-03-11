@@ -1,0 +1,88 @@
+﻿capital = 405
+
+oob = "TMS_1948"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+
+set_autonomy = {
+	target = SIK
+	autonomous_state = autonomy_puppet
+}
+
+set_politics = {
+
+	parties = {
+		national_socialism = {
+			popularity = 0
+		}
+		fascism = {
+			popularity = 0
+		}
+		paternal_autocrat = {
+			popularity = 87
+		}
+		social_conservative = {
+			popularity = 0
+		}
+		market_liberal = {
+			popularity = 0
+		}
+		social_liberal = {
+			popularity = 0
+		}
+		social_democrat = {
+			popularity = 0
+		}
+		left_wing_radical = {
+			popularity = 0
+		}
+		leninism = {
+			popularity = 0
+		}
+		stalinism = {
+			popularity = 13
+		}
+	}
+	
+	ruling_party = paternal_autocrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {	
+	name = "Ishan Babakhan"
+	picture = ".tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
+#find info here:https://en.wikipedia.org/wiki/Spiritual_Administration_of_the_Muslims_of_Central_Asia_and_Kazakhstan
+
+# Due to the way hoi loads files this has to be here
+SIK = {
+	set_politics = {
+
+		parties = {
+			paternal_autocrat = {
+					popularity = 72
+			}	
+			stalinism = {
+				popularity = 32
+			}
+
+			ruling_party = paternal_autocrat
+			last_election = "1888.15.6"
+			election_frequency = 48
+			elections_allowed = no
+		}
+	}
+}

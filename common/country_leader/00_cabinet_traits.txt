@@ -7,7 +7,7 @@ leader_traits = {
 	ideology_fa = { } #Fascism
 	ideology_pa = { } #Paternal Autocrat
 
-	ideology_cl = { } #Social Conservative
+	ideology_sc = { } #Social Conservative
 	ideology_ml = { } #Market Liberal
 	ideology_sl = { } #Social Liberal
 	ideology_sd = { } #Social Democrat
@@ -154,6 +154,11 @@ leader_traits = {
 	hoi_the_hangman = {
 		# - Cost of Garrison/MP units?
 		encryption = 0.25
+		random = no
+	}
+# Political Specialist
+	hoi_political_specialist = {
+		political_power_gain = 0.10
 		random = no
 	}
 

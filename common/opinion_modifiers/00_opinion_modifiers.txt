@@ -1,6 +1,6 @@
-#########################################################################
-# OPINION MODIFIERS
-##########################################################################
+#####################
+# OPINION MODIFIERS #
+#####################
 # value
 # min_trust
 # max_trust
@@ -10,14 +10,329 @@
 
 opinion_modifiers = {
 
-	###Gamestart### #these are for standard ideology stuff just ignore it.
+	### Gamestart ### #these are for standard ideology stuff just ignore it.
 
 	different_ideology = { value = -30 }
 	similar_ideology = { value = 20 }
-	same_ideology = { value = 35 }
+	same_ideology = { value = 40 }
 	rivalry = { value = -40 }
-}
 
-#GER_hates_ussr = { #this is an example, if you want to make modifiers in events focus trees or so on you can use this. #PS you can realy name them what ever you want but to organize them you could use TAG_opinion_name to make it easier to find if their are many modifiers.
-#	value = -200
-#}
+	### Generic opinions like "in faction or holds our cores" do NOT delete ###
+ 
+	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
+		value = -100
+	}
+
+	unstable_alliance = {
+		value = -10
+	}
+
+	holds_our_cores = {
+		value = -30
+	}
+	holds_our_claims = {
+		value = -15
+	}
+	claims_on_us = { 
+		value = -10
+	}
+	at_war_with_faction = {
+		value = -25
+	}
+	
+	justifying_war_goal = {
+		value = -10
+		min_trust = -10
+		days = 10
+		decay = 1
+	}
+
+	anti_comintern_pact_opinion = {
+		value = 25
+	}
+
+	refused_anti_comintern_pact_opinion= {
+		value = -50
+	}
+
+	anti_soviet_pact_call_refused = {
+		value = -50
+	}
+
+	tripartite_pact_opinion = {
+		value = 35
+	}
+
+	refused_tripartite_pact_opinion = {
+		value = -25
+	}
+
+	pact_against_us= {
+		value = -50
+	}
+
+	worse_pact_against_us= {
+		value = -75
+	}
+
+	protest_action_light = {
+		value = -10
+		months = 12
+		decay = 1
+	}
+
+	protest_action = {
+		value = -25
+		months = 12
+		decay = 1
+	}
+
+	protest_action_strong = {
+		value = -50
+		months = 12
+	}
+	
+	condemn_aggression = {
+		value = -50
+		months = 24
+	}
+	
+	western_betrayal = {
+		value = -50
+	}
+	
+	offered_support = {
+		value = 25
+		months = 24
+	}
+	
+	abandoned_czechs = {
+		value = -20
+		months = 12
+	}
+
+	abandoned_yugoslavia = {
+		value = -20
+		months = 12
+	}
+
+	improve_relation = {
+		value = 0
+		months = 0
+		decay = 3
+		max_trust = 100
+	}
+	
+	attache_sent = {
+		value = 15
+	}
+	
+	attache_sent_to_enemy = {
+		value = -20
+	}
+	
+	guarantee = {
+		value = 0
+	}
+	
+	guarantee = {
+		target = yes
+		value = 35
+	}
+
+	betrayed_guarantee = {
+		value = -100
+		months = 36
+	}
+	
+	at_war = {
+		value = -75
+	}
+	
+	in_faction = {
+		value = 50
+	}
+	
+	military_access = {
+		value = 10
+	}
+	
+	non_aggression_pact = {
+		value = 25
+	}
+
+	#fascists_in_government = { #may not be needed for our ideology system.
+	#	value = 15
+	#}
+
+	#communists_in_government = {
+	#	value = 15
+	#}
+
+	refused_help = {
+		value = -30
+		months = 36
+		decay = 1
+	}
+
+	took_stand_for_us = {
+		value = 25
+		decay = 1
+	}
+
+	long_term_trade_partner = {
+		value = 1
+	}
+	
+	puppet_opinion = {
+		value = 50
+	}
+
+	withdrew_advisors = {
+		value = -15
+	}
+
+	border_conflict_reconciled = {
+		value = 20
+	}
+
+	democratic_leanings_good = {
+		value = 15
+	}
+	democratic_leanings_bad = {
+		value = -30
+	}
+	communism_leanings_good = {
+		value = 15
+	}
+	communism_leanings_bad = {
+		value = -30
+	}
+	fascism_leanings_good = {
+		value = 15
+	}
+	fascism_leanings_bad = {
+		value = -30
+	}
+	neutrality_leanings_good = {
+		value = 15
+	}
+	neutrality_leanings_bad = {
+		value = -30
+	}
+	sanctions_relations = {
+		value = -40
+	}
+	minor_sanctions_relations = {
+		value = -20
+	}
+	unprovoked_aggression = {
+		value = -50
+		months = 36
+		decay = 1
+	}
+
+	aided_industry = {
+		value = 15
+	}
+	
+	communist_collaborators = {
+		value = -125
+		months = 48
+		decay = 1
+	}
+	
+	unholy_alliance  = {
+		value = -50
+		months = 48
+		decay = 1
+	}
+
+	rejected_demands = {
+		value = -30
+	}
+
+	unilateral_war = {
+		value = -50
+	}
+
+	betrayed_alliance = {
+		value = -50
+	}
+
+	refused_naval_treaty = {
+		value = -30
+	}
+
+	small_decrease = {
+		value = -10
+	}
+
+	medium_decrease = {
+		value = -25
+	}
+
+	large_decrease = {
+		value = -50
+	}
+
+	small_increase = {
+		value = 5
+	}
+
+	medium_increase = {
+		value = 15
+	}
+
+	large_increase = {
+		value = 25
+	}
+	
+	huge_increase = {
+		value = 50
+	}
+
+	##### TRADE MODIFIERS
+	embargo = {
+		trade = yes
+		value = -100
+	}
+	sanctions = {
+		trade = yes
+		value = -50
+	}
+	minor_sanctions = {
+		trade = yes
+		value = -20
+	}
+
+	unholy_alliance_opinion = {
+		value = 20
+	}
+	unholy_alliance_trade = {
+		trade = yes
+		value = 10
+	}
+
+	monroe_doctrine_trade = {
+		trade = yes
+		value = 5
+	}
+
+	ENG_imperial_trade = {
+		trade = yes
+		value = 50
+	}
+
+	same_ruling_party = { #needs to find out where it is set to be ingame?
+		value = 1
+	}
+	
+	similar_ruling_party = {
+		value = 1
+	}
+	
+	different_party_types = {
+		value = -1
+	}
+}	

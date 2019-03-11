@@ -82,42 +82,44 @@ create_country_leader = {
 # Due to the way hoi loads files this has to be here
 FLA = {
 	set_politics = {
-		parties = {
-		national_socialism = {
-			popularity = 46
-		}
-		fascism = {
-			popularity = 16
-		}
-		paternal_autocrat = {
-			popularity = 7
-		}
-		social_conservative = {
-			popularity = 12
-		}
-		market_liberal = {
-			popularity = 7
-		}
-		social_liberal = {
-			popularity = 0
-		}
-		social_democrat = {
-			popularity = 4
-		}
-		left_wing_radical = {
-			popularity = 8
-		}
-		leninism = {
-			popularity = 0
-		}
-		stalinism = {
-			popularity = 0
-		}
 
-		ruling_party = national_socialism
-		last_election = "1888.15.6"
-		election_frequency = 48
-		elections_allowed = no
+		parties = {
+			national_socialism = {
+				popularity = 46
+			}
+			fascism = {
+				popularity = 16
+			}
+			paternal_autocrat = {
+					popularity = 7
+			}	
+			social_conservative = {
+				popularity = 12
+			}
+				market_liberal = {
+				popularity = 7
+			}
+			social_liberal = {
+				popularity = 0
+			}
+			social_democrat = {
+				popularity = 4
+			}
+			left_wing_radical = {
+				popularity = 8
+			}
+			leninism = {
+				popularity = 0
+			}
+			stalinism = {
+				popularity = 0
+			}
+
+			ruling_party = national_socialism
+			last_election = "1888.15.6"
+			election_frequency = 48
+			elections_allowed = no
+		}
 	}
 }
 

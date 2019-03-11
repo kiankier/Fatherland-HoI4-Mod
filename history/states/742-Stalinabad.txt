@@ -3,8 +3,7 @@ state={
 	name="STATE_742"
 
 	history={
-		add_core_of = TAJ
-		owner = SOV
+		owner = TMS
 		victory_points = {
 			1384 1
 		}
@@ -12,8 +11,8 @@ state={
 			infrastructure = 1
 
 		}
+		add_core_of = TMS
 		add_core_of = SOV
-
 	}
 
 	provinces={

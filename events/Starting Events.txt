@@ -1,0 +1,35 @@
+﻿###########################
+# Starting Events
+###########################
+
+add_namespace = start_event
+
+# Version 0.0.1
+country_event = {
+	id = start_event.1
+	title = start_event.1.t
+	desc = start_event.1.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = start_event.1.a
+		country_event = { id = start_event.2 days = 1 }
+	}
+}
+
+# Fatherland: Mod Credits
+country_event = {
+	id = start_event.2
+	title = start_event.2.t
+	desc = start_event.2.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = start_event.2.a
+		#add effect here
+	}
+}

@@ -4,7 +4,7 @@ state={
 
 	history={
 		add_core_of = TMS
-		owner = SOV
+		owner = TMS
 		victory_points = {
 			12333 1
 		}
@@ -14,7 +14,6 @@ state={
 
 		}
 		add_core_of = SOV
-
 	}
 
 	provinces={

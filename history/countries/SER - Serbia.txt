@@ -24,21 +24,25 @@ set_convoys = 0
 set_politics = {
 
 	parties = {
-		social_conservative = { 
-			popularity = 21
+		national_socialism = {
+			popularity = 0
 		}
 
 		fascism = {
 			popularity = 29
 		}
-		
-		leninism = {
-			popularity = 20
-			#banned = no #default is no
-		}
-		
+
 		paternal_autocrat = { 
 			popularity = 30
+		}
+		
+		social_conservative = { 
+			popularity = 21
+		}
+
+		leninism = {
+			popularity = 20
+			banned = yes #default is no
 		}
 	}
 	
@@ -47,6 +51,7 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
+
 set_stability = 0.6
 
 create_country_leader = {
@@ -76,7 +81,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = paternal_autocrat
+	ideology = military_dictatorship
 	traits = {
 		#
 	}

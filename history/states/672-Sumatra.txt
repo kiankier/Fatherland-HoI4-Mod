@@ -12,8 +12,7 @@ state={
 	}
 
 
-	history=
-	{
+	history={
 		owner = INS
 		add_core_of = INS
 		victory_points = {
@@ -24,9 +23,17 @@ state={
 			12268 1 
 		}
 
+		HOL = {
+			set_province_controller = 8360
+			set_province_controller = 4652
+			set_province_controller = 1648
+			set_province_controller = 12126
+		}
+
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+			arms_factory = 3
 			air_base = 1
 			4652 = {
 				naval_base = 3

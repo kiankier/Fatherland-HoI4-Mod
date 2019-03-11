@@ -35,6 +35,24 @@ set_technology = {
 	fuel_refining = 1
 }
 
+#Non Aggression Pacts #Add the french state later
+diplomatic_relation = { 
+	country = TUR 
+	relation = non_aggression_pact 
+}
+diplomatic_relation = { 
+	country = SWI 
+	relation = non_aggression_pact 
+}
+#diplomatic_relation = { 
+#	country = FRS -- French state tag needed.
+#	relation = non_aggression_pact 
+#}
+diplomatic_relation = { 
+	country = SOV 
+	relation = non_aggression_pact 
+}
+
 give_guarantee = CRO
 #give_guarantee = FRS #French State needs to be a thing first
 give_guarantee = ITA
@@ -48,7 +66,7 @@ give_guarantee = COK
 
 create_faction = Axis
 add_to_faction = GER
-add_to_faction = HOL
+add_to_faction = RKN
 add_to_faction = RKB
 add_to_faction = WAL
 add_to_faction = FLA
@@ -69,7 +87,7 @@ add_to_faction = LOK
 add_to_faction = SSS
 
 set_autonomy = {
-	target = HOL
+	target = RKN
 	autonomous_state = autonomy_reichskommissariat
 }
 set_autonomy = {
@@ -112,8 +130,14 @@ set_autonomy = {
 	target = DEN
 	autonomous_state = autonomy_puppet
 }
-
-set_variable = { var = ger_gateway_to_europe_influence value = 0 }
+set_autonomy = {
+	target = SLO
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = SSS
+	autonomous_state = autonomy_puppet
+}
 
 set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }

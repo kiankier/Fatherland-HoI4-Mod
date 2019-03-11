@@ -94,7 +94,7 @@ DEN = {
 	color_ui = rgb { 199 151 121 }
 }
 BUL = {
-	color = rgb { 51 155 0 }
+	color = rgb { 66 113 60 }
 	color_ui = rgb { 210 147 217 }
 }
 POR = {
@@ -580,7 +580,10 @@ COK = {
 	color = rgb { 220 200 100 }
 	color_ui = rgb { 220 200 100 }
 }
-
+RKN = {
+	color = rgb { 225 150 0 } #20 115 225
+	color_ui = rgb { 225 150 0 }
+}
 
 
 

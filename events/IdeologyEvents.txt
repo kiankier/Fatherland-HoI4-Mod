@@ -1,8 +1,8 @@
-﻿###########################
-# Ideology Events
-###########################
-# Made By Mads
-###########################
+﻿###################
+# Ideology Events #
+###################
+# Made By Mads #
+################
 
 add_namespace = ideology_event
 
